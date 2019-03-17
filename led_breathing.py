@@ -12,6 +12,7 @@ brillo = 0
 #Setup
 #Indicamos que queremos llamar a los pines por el nombre que les dio el fabricante
 GPIO.setmode(GPIO.BCM) 
+GPIO.setwarnings(False) #Quitamos las advertencias es el programa
 #Indicamos que los pines que tienen LEDs son de salida
 GPIO.setup(ledPin, GPIO.OUT)
 GPIO.setup(pwmPin, GPIO.OUT)
