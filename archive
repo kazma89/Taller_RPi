@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Archive the input file to a predetermined location
+
+# Check exactly 1 argument
+if [ $# -ne 1 ]
+then
+  echo "Usage: $0 FILE"
+  exit 1
+fi
+
+
+# The archive location
+archive=/home/pi/archives
+
+#Make the archive (if doesnf exist)
+mkdir -p $archive
+
+# Copy the input file
+
+cp -r $l $archive 

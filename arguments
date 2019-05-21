@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# access sonme arguments
+echo The command entered was $0
+echo My name is $1
+
+echo -e "I am $2 years old\n\t$# arguments were passed in" #el \n es para una nueva linea, \t es para una tabulacion
+
+#para convertirlo en un ejecutable "chmond u+x" arguments con ese comando le agrego la opcion de ejecutable
